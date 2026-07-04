@@ -12,7 +12,6 @@ import {
   getTopRatedMovies,
   getUpcomingMovies,
   getMovieDetails,
-  searchMovies,
 } from "../../services/movieService";
 
 function Home() {
