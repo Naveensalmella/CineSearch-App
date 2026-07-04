@@ -1,0 +1,82 @@
+.movie-row-section {
+    padding: 20px 0 40px;
+    background: #0a0a0a;
+}
+
+.row-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0 60px;
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+}
+
+.row-wrapper {
+    position: relative;
+}
+
+.row-scroll {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 4px 60px 12px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.row-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navigation arrows */
+.row-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.row-arrow:hover {
+    background: rgba(255, 107, 0, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.row-arrow.left {
+    left: 10px;
+}
+
+.row-arrow.right {
+    right: 10px;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+    .row-title {
+        padding: 0 24px;
+        font-size: 18px;
+    }
+
+    .row-scroll {
+        padding: 4px 24px 12px;
+        gap: 12px;
+    }
+
+    .row-arrow {
+        display: none;
+    }
+}

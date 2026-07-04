@@ -1,0 +1,2 @@
+/* Shared auth styles are in Login.css — both pages use the same classes */
+@import "../Login/Login.css";

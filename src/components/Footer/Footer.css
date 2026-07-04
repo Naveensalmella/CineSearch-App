@@ -1,0 +1,63 @@
+.site-footer {
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px 40px 30px;
+    text-align: center;
+}
+
+.footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #ff6b00, #ff3d00);
+    border-radius: 6px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.footer-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-copy {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.footer-copy a {
+    color: #ff8a3d;
+    text-decoration: none;
+}
+
+.footer-copy a:hover {
+    text-decoration: underline;
+}
+
+.heart-icon {
+    color: #ef4444;
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+.footer-disclaimer {
+    color: #444;
+    font-size: 11px;
+}
