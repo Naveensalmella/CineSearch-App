@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getBackdrop, getPoster, getMovieDetails, getTrailerKey } from "../../services/movieService";
+import { getBackdrop, getMovieDetails, getTrailerKey } from "../../services/movieService";
 import { FaPlay, FaInfoCircle } from "react-icons/fa";
 import "./Hero.css";
 

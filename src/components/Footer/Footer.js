@@ -1,4 +1,4 @@
-import { FaGithub, FaHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 import "./Footer.css";
 
 function Footer() {

@@ -40,16 +40,7 @@ function Home() {
     document.body.style.overflow = "";
   };
 
-  const handleSearch = async (query) => {
-    try {
-      const results = await searchMovies(query);
-      setSearchResults(results);
-      setSearchTitle(`Results for "${query}"`);
-      document.getElementById("search")?.scrollIntoView({ behavior: "smooth" });
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  
 
   useEffect(() => {
     const fetchAll = async () => {
