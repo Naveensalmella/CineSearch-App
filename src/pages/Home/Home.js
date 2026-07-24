@@ -23,6 +23,7 @@ function Home() {
   const [searchTitle, setSearchTitle] = useState(null);
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
 
   const handleMovieClick = async (id) => {
     try {
@@ -39,7 +40,7 @@ function Home() {
     document.body.style.overflow = "";
   };
 
-  
+
 
   useEffect(() => {
     const fetchAll = async () => {
@@ -54,8 +55,10 @@ function Home() {
         setPopularMovies(popular);
         setTopRatedMovies(topRated);
         setUpcomingMovies(upcoming);
+        setLoadError(false);
       } catch (error) {
         console.error("Failed to fetch movies:", error);
+        setLoadError(true);
       }
       setLoading(false);
     };
@@ -85,6 +88,10 @@ function Home() {
         <div className="loading-state">
           <div className="loader" />
           <p>Loading movies...</p>
+        </div>
+      ) : loadError ? (
+        <div className="loading-state">
+          <p>Something went wrong loading movies. Please check your connection and try again.</p>
         </div>
       ) : (
         <>
